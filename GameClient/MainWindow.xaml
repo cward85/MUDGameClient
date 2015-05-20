@@ -1,0 +1,16 @@
+﻿<Window x:Class="GameClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="SendKillConnection">
+    <Grid>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="10,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.133,2.13" KeyDown="CheckForEnter"/>
+        <RichTextBox x:Name="rtbOutput" HorizontalAlignment="Left" Height="272" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
